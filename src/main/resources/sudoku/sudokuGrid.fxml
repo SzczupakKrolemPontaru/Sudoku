@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sudoku.GuiBoardController" >
+    <GridPane fx:id="sudokuGrid" prefHeight="600.0" prefWidth="600.0"/>
+
+    <Button layoutX="14.0" layoutY="546.0" onAction="#pressedBackButton" prefHeight="40.0" prefWidth="100.0" text="%Button_Back"/>
+    <Button layoutX="486.0" layoutY="546.0" onAction="#pressedSaveButton" prefHeight="40.0" prefWidth="100.0" text="%Button_Save"/>
+    <Button layoutX="200.0" layoutY="500.0" onAction="#pressedCheckButton" prefHeight="86.0" prefWidth="200.0" text="%Button_Check">
+        <font>
+            <Font size="25" />
+        </font>
+    </Button>
+</Pane>
